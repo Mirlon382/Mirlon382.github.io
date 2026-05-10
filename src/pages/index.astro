@@ -1,49 +1,119 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+import { Image } from 'astro:assets';
+import heroImage from '../assets/logo-lvdsm.jpeg';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+  <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+  <Header />
+
+  <main class="home">
+    <section class="hero">
+      <p class="eyebrow">- •  • -</p>
+
+      <h1>Mirlon382 Blog</h1>
+
+      <h2>
+        A blog about language models, synthetic voices,
+        and sharing experiments.
+      </h2>
+
+      <p class="intro">
+        Deeply motivated by the article : <a href="https://nousresearch.com/from-black-box-to-glass-house-the-imperative-for-transparent-ai-development">"From black-box to glass-house"</a> 
+      </p>
+	  
+	  <p class="eyebrow">- •  • -</p>
+
+      <figure class="hero-image-container">
+        <Image
+          src={heroImage}
+          alt="Talking Machines His master's voice"
+          class="hero-image"
+          width={700}
+        />
+
+        <figcaption class="caption">
+          French logo of the Victor Talking Machine Company
+        </figcaption>
+      </figure>
+	  <p class="eyebrow">- •  • -</p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+
+
+
+
+  .hero {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .eyebrow {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  .intro {
+    max-width: 680px;
+    margin: 0 auto 3rem;
+    color: #38393b;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+
+  .hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-image {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+      0 20px 60px rgba(0, 0, 0, 0.45);
+  }
+
+  .caption {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .caption a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .caption a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+
+const { title = "Mirlon382 Blog" } = Astro.props;
+---
+
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <body class="min-h-screen bg-[#f7f3e8] text-[#1a1a1a] antialiased">
+
+    <div class="min-h-screen">
+
+      <slot />
+
+    </div>
+
+  </body>
+
+</html>

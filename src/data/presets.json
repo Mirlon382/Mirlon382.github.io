@@ -1,0 +1,129 @@
+{
+  "GPU_PRESETS": {
+    "RTX 3060 12GB": {
+      "vram": 12,
+      "bandwidth": 360,
+      "compute": 13
+    },
+
+    "RTX 4070 Ti": {
+      "vram": 12,
+      "bandwidth": 504,
+      "compute": 40
+    },
+
+    "RTX 4090": {
+      "vram": 24,
+      "bandwidth": 1008,
+      "compute": 82.6
+    },
+
+    "A100 40GB": {
+      "vram": 40,
+      "bandwidth": 1555,
+      "compute": 19.5
+    },
+
+    "A100 80GB": {
+      "vram": 80,
+      "bandwidth": 2039,
+      "compute": 19.5
+    },
+
+    "H100 SXM": {
+      "vram": 80,
+      "bandwidth": 3350,
+      "compute": 67
+    },
+
+    "MI300X": {
+      "vram": 192,
+      "bandwidth": 5300,
+      "compute": 163
+    },
+
+    "RX 6800": {
+      "vram": 16,
+      "bandwidth": 512,
+      "compute": 20.7
+    },
+
+    "M2 Ultra": {
+      "vram": 192,
+      "bandwidth": 800,
+      "compute": 27
+    }
+  },
+
+  "MODEL_PRESETS": {
+    "TinyLlama 1.1B": {
+      "params": 1.1,
+      "layers": 22,
+      "heads": 32,
+      "d_head": 64
+    },
+
+    "Gemma 2B": {
+      "params": 2,
+      "layers": 18,
+      "heads": 8,
+      "d_head": 256
+    },
+
+    "Llama 3 8B": {
+      "params": 8,
+      "layers": 32,
+      "heads": 32,
+      "d_head": 128
+    },
+
+    "Nous Hermes 8B": {
+      "params": 8,
+      "layers": 32,
+      "heads": 32,
+      "d_head": 128
+    },
+
+    "Mistral 7B": {
+      "params": 7,
+      "layers": 32,
+      "heads": 32,
+      "d_head": 128
+    },
+
+    "Gemma 9B": {
+      "params": 9,
+      "layers": 42,
+      "heads": 16,
+      "d_head": 256
+    },
+
+    "Llama 3 70B": {
+      "params": 70,
+      "layers": 80,
+      "heads": 64,
+      "d_head": 128
+    },
+
+    "Nous Hermes 70B": {
+      "params": 70,
+      "layers": 80,
+      "heads": 64,
+      "d_head": 128
+    },
+
+    "Gemma 27B": {
+      "params": 27,
+      "layers": 46,
+      "heads": 32,
+      "d_head": 128
+    },
+
+    "DeepSeek V2": {
+      "params": 236,
+      "layers": 60,
+      "heads": 128,
+      "d_head": 128
+    }
+  }
+}

@@ -1,0 +1,38 @@
+---
+title: "Estimate Model Performance based on hardware"
+description: "VRAM, bandwidth, quantization and real performance"
+pubDate: 2026-05-09
+heroImage: '../../assets/blog-placeholder-5.jpg'
+---
+
+import ModelCalculator from "../../components/ModelCalculator.jsx";
+
+# Estimating Model Performance based on hardware
+
+  So I bought a used AMD RX6800 GPU 3 years ago with my first paycheck. I thought that 16 GB of VRAM would be plenty to fit LLMs I'd always been gaming on way less...
+  It turned out not only to be insufficient but also trapped out of the mainstream inference ecosystem (CUDA). When I discovered that RocM size would exceed Skyrims, it picked my curiosity.
+  I managed to run a few llms since then and wanted to share a way to estimate if the model you are dreaming of can run on your GPU.
+
+This calculator makes a lot of assumptions and estimates should be seen as an upper bound for past models and in some case a lower bound for recent ones. Be aware that it applies only to transformer architecture and even if CUDA and RocM are mentionned, they are not taken into account.
+
+## The estimator
+
+<div class="tool-card">
+  <ModelCalculator client:load />
+</div>
+---
+# TO BE WRITTEN
+## Guide
+Context is something important for conversations. Way more when coding big files, lines of code  
+
+---
+## Explanations
+
+Modern LLM inference is mostly constrained by **memory bandwidth and VRAM**, not raw compute power when dealing with a single user.
+
+There is math blabla
+---
+## Limits
+
+
+

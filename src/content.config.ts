@@ -16,5 +16,3 @@ const blog = defineCollection({
 			heroImage: z.optional(image()),
 		}),
 });
-
-export const collections = { blog };
