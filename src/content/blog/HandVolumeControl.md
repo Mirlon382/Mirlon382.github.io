@@ -1,7 +1,7 @@
 ---
 title: 'Hand Volume Control'
 description: 'Using Google MediaPipe for computer vision'
-pubDate: 'Jul 15 2022'
+pubDate: 2026-05-09
 heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
 
